@@ -1,30 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image, Button } from 'react-native';
 
-const array = [
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Blast.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Tatsumaki.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Silver%20Fang.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Samurai%20Atomico.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Child%20Emperor.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/BofoyAnime.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/King.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Zombieman.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Drive%20Knight.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Pig%20God.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Darkshine.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Watchdog%20Man.png?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Flash%20Flashy.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Genos.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Tank-Top%20Master.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Metal%20Bat.jpg?raw=true',
-  'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Puri%20Puri%20Prisioner.jpg?raw=true',
-
-]; //criando tabela
-
-
-
-
 const styles = StyleSheet.create({
   div: {
     backgroundColor: '#101010',
@@ -84,34 +60,52 @@ const styles = StyleSheet.create({
   },
 });
 
-const nomes = [
-  '1. Blast',
-  '2. Tatsumaki',
-  '3. Silver Fang',
-  '4. Atomic Samurai',
-  '5. Child Emperor',
-  '6. Metal Knight',
-  '7. King',
-  '8. Zombieman',
-  '9. Drive Knight',
-  '10. Pig God',
-  '11. Darkshine',
-  '12. Watchdog Man',
-  '13. Flash Flashy',
-  '14. Genos',
-  '15. Tank-Top Master',
-  '16. Metal Bat',
-  '17. Puri-Puri Prisoner',
-];
+
 
 
 
 export default class App extends Component<{}> {
-
  render() {
+   var imagens = [
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Blast.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Tatsumaki.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Silver%20Fang.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Samurai%20Atomico.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Child%20Emperor.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/BofoyAnime.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/King.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Zombieman.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Drive%20Knight.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Pig%20God.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Darkshine.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Watchdog%20Man.png?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Flash%20Flashy.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Genos.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Tank-Top%20Master.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Metal%20Bat.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Puri%20Puri%20Prisioner.jpg?raw=true',
+   ];
 
-  var array = [ "Pankaj", "Rita", "Mohan", "Amit", "Babulal", "Sakshi" ];
-
+    var nomes = [
+      '1. Blast',
+      '2. Tatsumaki',
+      '3. Silver Fang',
+      '4. Atomic Samurai',
+      '5. Child Emperor',
+      '6. Metal Knight',
+      '7. King',
+      '8. Zombieman',
+      '9. Drive Knight',
+      '10. Pig God',
+      '11. Darkshine',
+      '12. Watchdog Man',
+      '13. Flash Flashy',
+      '14. Genos',
+      '15. Tank-Top Master',
+      '16. Metal Bat',
+      '17. Puri-Puri Prisoner',
+    ];
+    
    return (
      <View style={styles.div}>
       <Text style={styles.menu}>
@@ -126,15 +120,15 @@ export default class App extends Component<{}> {
       <Text style={styles.titulo}>Classe S</Text>
 
       <Text style={styles.section}>
-
-        <Text style={styles.card}>
-          <Image style={styles.imagem} source={array[1]} />
-          {'\n'}
-          <Text style={styles.item}>{nomes[1]}</Text>
-        </Text>
-        
+          { nomes.map((item, key)=>(
+            <Text style={styles.card}>
+            <Image style={styles.imagem} source={imagens[key]} />
+            {'\n'}
+            <Text style={styles.item} key={key}>{item}</Text>
+            </Text>
+            )
+          )}
       </Text>
-
     </View>
    );
  }
