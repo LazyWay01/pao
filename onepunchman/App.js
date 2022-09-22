@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, Pressable } from 'react-native';
 
 const styles = StyleSheet.create({
   div: {
@@ -16,6 +16,14 @@ const styles = StyleSheet.create({
   menu: {
     padding: 20,
     backgroundColor: '#000',
+  },
+
+  menuCenter: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   tituloMenu: {
     textAlign: 'center',
@@ -40,7 +48,7 @@ const styles = StyleSheet.create({
   item: {
     padding: 10,
     paddingLeft: 0,
-    fontSize: 28,
+    fontSize: 25,
     height: 44,
     fontWeight: 700,
     color: '#fff',
@@ -54,6 +62,23 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  },
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    borderRadius: 4,
+    elevation: 3,
+    backgroundColor: '#444',
+    margin: 5,
+  },
+  text: {
+    fontSize: 16,
+    lineHeight: 21,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+    color: '#fff',
   },
 });
 
@@ -84,12 +109,20 @@ export default class App extends Component<{}> {
    return (
      <View style={styles.div}>
       <Text style={styles.menu}>
+        <Text style={styles.menuCenter}>
         <Text style={styles.tituloMenu}>One Punch Man</Text>
-        {'\n'}
-        {'\n'}
-        <Button title="Heróis"/>
-        <Button title="Monstros"/>
-        <Button title="Classe S"/>
+        </Text>
+        <Text style={styles.menuCenter}>
+        <Pressable style={styles.button}>
+          <Text style={styles.text}>Heróis</Text>
+        </Pressable>
+        <Pressable style={styles.button}>
+          <Text style={styles.text}>Monstros</Text>
+        </Pressable>
+        <Pressable style={styles.button}>
+          <Text style={styles.text}>Classe S</Text>
+        </Pressable>
+        </Text>
       </Text>
 
       <Text style={styles.titulo}>Classe S</Text>
