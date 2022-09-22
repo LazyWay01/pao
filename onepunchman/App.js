@@ -66,28 +66,9 @@ const styles = StyleSheet.create({
 
 export default class App extends Component<{}> {
  render() {
-  var classes = [
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Blast.jpg?raw=true','1. Blast'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Tatsumaki.jpg?raw=true','2. Tatsumaki'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Silver%20Fang.jpg?raw=true','3. Silver Fang'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Samurai%20Atomico.jpg?raw=true','4. Atomic Samurai'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Child%20Emperor.jpg?raw=true','5. Child Emperor'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/BofoyAnime.jpg?raw=true','6. Metal Knight'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/King.jpg?raw=true','7. King'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Zombieman.jpg?raw=true','8. Zombieman'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Drive%20Knight.jpg?raw=true','9. Drive Knight'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Pig%20God.jpg?raw=true','10. Pig God'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Darkshine.jpg?raw=true','11. Darkshine'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Watchdog%20Man.png?raw=true','12. Watchdog Man'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Flash%20Flashy.jpg?raw=true','13. Flash Flashy'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Genos.jpg?raw=true','14. Genos'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Tank-Top%20Master.jpg?raw=true','15. Tank-Top Master'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Metal%20Bat.jpg?raw=true','16. Metal Bat'],
-    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Puri%20Puri%20Prisioner.jpg?raw=true','17. Puri-Puri Prisoner'],
-   ];
 
    var imagens = [
-    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Blast.jpg?raw=true',
+    ['https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Blast.jpg?raw=true',
     'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Tatsumaki.jpg?raw=true',
     'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Silver%20Fang.jpg?raw=true',
     'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Samurai%20Atomico.jpg?raw=true',
@@ -103,28 +84,9 @@ export default class App extends Component<{}> {
     'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Genos.jpg?raw=true',
     'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Tank-Top%20Master.jpg?raw=true',
     'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Metal%20Bat.jpg?raw=true',
-    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Puri%20Puri%20Prisioner.jpg?raw=true',
+    'https://github.com/HenriqueMendes7/PAM---Henrique-Mendes-3DA/blob/main/onepunchman/assets/img/Puri%20Puri%20Prisioner.jpg?raw=true'],
+    ['1. Blast', '2. Tatsumaki', '3. Silver Fang', '4. Atomic Samurai', '5. Child Emperor', '6. Metal Knight', '7. King', '8. Zombieman', '9. Drive Knight', '10. Pig God', '11. Darkshine', '12. Watchdog Man', '13. Flash Flashy', '14. Genos', '15. Tank-Top Master', '16. Metal Bat', '17. Puri-Puri Prisoner',]
    ];
-
-    var nomes = [
-      '1. Blast',
-      '2. Tatsumaki',
-      '3. Silver Fang',
-      '4. Atomic Samurai',
-      '5. Child Emperor',
-      '6. Metal Knight',
-      '7. King',
-      '8. Zombieman',
-      '9. Drive Knight',
-      '10. Pig God',
-      '11. Darkshine',
-      '12. Watchdog Man',
-      '13. Flash Flashy',
-      '14. Genos',
-      '15. Tank-Top Master',
-      '16. Metal Bat',
-      '17. Puri-Puri Prisoner',
-    ];
     
    return (
      <View style={styles.div}>
@@ -140,14 +102,18 @@ export default class App extends Component<{}> {
       <Text style={styles.titulo}>Classe S</Text>
 
       <Text style={styles.section}>
-          { nomes.map((item, key)=>(
-            <Text style={styles.card}>
-            <Image style={styles.imagem} source={imagens[key]} />
-            {'\n'}
-            <Text style={styles.item} key={key}>{item}</Text>
-            </Text>
-            )
-          )}
+
+          {imagens[1,0].map((item, key) => {
+            return (
+              <Text style={styles.card}>
+                <Image style={styles.imagem} source={item} />
+                {'\n'}
+                <Text style={styles.item} key={key}>{imagens[1][key]}</Text>
+              </Text>
+            );
+          })}
+
+          
       </Text>
     </View>
    );
