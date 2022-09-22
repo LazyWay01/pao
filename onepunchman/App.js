@@ -35,34 +35,27 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 5,
     display: 'flexBlock',
-    width: 300,
+    width: 500,
   },
   item: {
     padding: 10,
     paddingLeft: 0,
-    fontSize: 25,
+    fontSize: 28,
     height: 44,
+    fontWeight: 700,
     color: '#fff',
   },
   imagem: {
-    width: 100,
-    height: 100,
+    width: 250,
+    height: 350,
     borderRadius: 5,
   },
-  btn: {
-    color: '#fff',
-    marginLeft: 10,
-    padding: 7,
-    fontSize: 18,
-    backgroundColor: '#222222',
-    borderRadius: 5,
-    textAlign: 'center',
+  imagemCard: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 });
-
-
-
-
 
 export default class App extends Component<{}> {
  render() {
@@ -106,9 +99,11 @@ export default class App extends Component<{}> {
           {imagens[1,0].map((item, key) => {
             return (
               <Text style={styles.card}>
+              <Text style={styles.imagemCard}>
                 <Image style={styles.imagem} source={item} />
                 {'\n'}
                 <Text style={styles.item} key={key}>{imagens[1][key]}</Text>
+              </Text>
               </Text>
             );
           })}
